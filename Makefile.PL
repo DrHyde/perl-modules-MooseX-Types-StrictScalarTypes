@@ -14,6 +14,7 @@ WriteMakefile(
     PREREQ_PM => {
         'Scalar::Type'         => v1.0.1,
         'Test2::V0'            => 0.000159,
+        'Moose'                => 1.06,
         'MooseX::Types'        => 0.50,
         'MooseX::Types::Moose' => 0.50,
     },
