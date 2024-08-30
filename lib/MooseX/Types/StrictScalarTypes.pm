@@ -7,7 +7,7 @@ our $VERSION = '1.0.0';
 
 use Scalar::Type qw(bool_supported :is_*);
 
-use MooseX::Types -declare => [qw(StrictInt StrictNumber), bool_supported ? 'StrictBool' : ()];
+use MooseX::Types -declare => [qw(StrictInt StrictNumber), (bool_supported() ? 'StrictBool' : ())];
 use MooseX::Types::Moose qw(Value);
 
 subtype StrictInt,
