@@ -49,9 +49,9 @@ MooseX::Types::StrictScalarTypes - strict Moose type constraints for integers, n
 
 These will all throw exceptions:
 
-    Foo->new(integer => "3");     # because "3" is a float, not an int
+    Foo->new(integer => 3.14);    # because 3.14 is a float, not an int
 
-    Foo->new(number => "3.14");   # again, that's a string, not a number
+    Foo->new(number => "3.14");   # that's a string, not a number
 
     Foo->new(boolean => 1);       # that's an integer, not the result of a comparison
 
